@@ -8,8 +8,8 @@ profiles:
   canary:
     endpoint: /hello/
     weight: 10 # percentage of traffic to route to this class of deployment
-    max_memory: 0.25G
-    max_cpu: 0.25
+    max_memory: 0.20G
+    max_cpu: 0.20
   default:
     name: {{branch.replace('/', '-')}}
     endpoint: /preview/hello/{{branch}}/
